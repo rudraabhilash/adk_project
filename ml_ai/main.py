@@ -11,6 +11,9 @@
 # os.environ["OPENROUTER_API_KEY"] = ""
 # $env:OPENROUTER_API_KEY=""
 #$env:GEMINI_API_KEY=""
+#export OPENAI_API_KEY="sk-xxxxxxxxxxxxxxxx" #Bash command
+#setx OPENAI_API_KEY "sk-xxxxxxxxxxxxxxxx"     #powershell command
+
 # from google.genai.agents import LlmAgent
 # from google.genai.tools import google_search
 # from google.genai import web
