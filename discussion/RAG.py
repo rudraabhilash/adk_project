@@ -486,3 +486,27 @@ for i in indices[0]:
 # You didn’t say “blue crayons” exactly—
 # yet the system understood the meaning.
 
+# 🤖 Step 4: LLM + Vector DB together (RAG)
+
+context = "\n".join([documents[i] for i in indices[0]])
+prompt = f"""
+Use the information below to answer the question.
+Context:
+{context}
+Question:
+{query}
+"""
+# Send this prompt to an LLM (OpenAI / Gemini / etc.)
+print(prompt)
+
+# User question
+#    ↓
+# Embedding
+#    ↓
+# Vector DB search
+#    ↓
+# Relevant context
+#    ↓
+# LLM generates grounded answer
+# 📌 Proof of value
+# This avoids hallucination because the LLM answers from retrieved facts.
