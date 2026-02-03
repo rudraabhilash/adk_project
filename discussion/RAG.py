@@ -410,6 +410,21 @@
 # ✔ Honest
 # ✔ Grounded
 # ***********************************************************************************
+# 🖍️ Part 1: LLMs + Vector DBs (the big picture)
+# Crayon version
+
+# LLM = the kid who explains things beautifully
+
+# Vector DB = the magical box that remembers similar crayons fast
+
+# Embedding model = machine that turns crayons into numbers
+
+# LLMs do not remember your data.
+# Vector DBs do not talk well.
+
+# 👉 Together, they form RAG (Retrieval-Augmented Generation).
+
+
 
 # 🧠 Part 2: Step-by-step Python (minimal, real, correct)
 
@@ -419,4 +434,55 @@
 # Store vectors in FAISS
 # Search similar vectors
 # Feed results to an LLM
+
+from sentence_transformers import SentenceTransformer
+import numpy as np
+
+# Load embedding model
+model = SentenceTransformer("all-MiniLM-L6-v2")
+
+documents = [
+    "Blue crayons are calming and cool",
+    "Red crayons are energetic and bold",
+    "Sky blue color feels peaceful",
+    "Bananas are yellow fruits",
+]
+
+# Convert text → vectors
+doc_vectors = model.encode(documents)
+
+print(doc_vectors.shape)
+# (4, 384) → 4 crayons, each with 384-number color meaning
+
+# 📦 Step 2: Store vectors in FAISS (vector DB)
+import faiss
+dimension = doc_vectors.shape[1]
+# Create FAISS index (flat = exact search)
+index = faiss.IndexFlatL2(dimension)
+# Add vectors
+index.add(np.array(doc_vectors))
+print("Total crayons stored:", index.ntotal)
+# 🧠 What FAISS is doing
+# Organizes vectors in memory
+# Uses math to avoid checking every item
+
+
+# 🔍 Step 3: Similarity search (magic moment ✨)
+
+query = "I like calm blue colors"
+query_vector = model.encode([query])
+# Find top 2 closest vectors
+distances, indices = index.search(np.array(query_vector), k=2)
+for i in indices[0]:
+    print(documents[i])
+
+
+# Output (conceptually)
+# Blue crayons are calming and cool
+# Sky blue color feels peaceful
+
+
+# 🖍️ Crayon magic
+# You didn’t say “blue crayons” exactly—
+# yet the system understood the meaning.
 
