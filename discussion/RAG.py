@@ -411,3 +411,12 @@
 # ✔ Grounded
 # ***********************************************************************************
 
+# 🧠 Part 2: Step-by-step Python (minimal, real, correct)
+
+# We’ll simulate:
+
+# Convert text → vectors
+# Store vectors in FAISS
+# Search similar vectors
+# Feed results to an LLM
+
