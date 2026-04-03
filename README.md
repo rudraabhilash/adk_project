@@ -24,3 +24,27 @@ This workspace is set up for machine learning, AI, and web development using Pyt
 #uvicorn agents.activities_agent.__main__:app --port 8003 & 
 
 #streamlit run streamlit_app.py
+
+
+*******************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************
+
+ollama installtion - 
+
+An open-source framework designed to run large language models by Jeffrey Morgan and Michael Chiang as a part of Y Combinator's Winter 2021 batch. 
+Context: The founders created Ollama to make it easier for developers to run large language models (LLMs) locally, focusing on privacy and bypassing expensive cloud APIs. 
+
+Step 1 - Download and install binary for your OS from https://ollama.com/download
+
+Step 2 - check version to verify - ollama --version
+
+Step 3 - Download llama3 model. "ollama pull llama3" This downloads the model (~4–8GB depending on quantization).
+
+Step 4 - "ollama list" to list llms.
+
+Step 5 - "ollama run llama3" Run the model
+
+Step 6 - Your local llm model is running! Ask questions!
+
+*******************************************************************************************************************************************************************
+*******************************************************************************************************************************************************************
