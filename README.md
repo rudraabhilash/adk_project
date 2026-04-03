@@ -109,11 +109,11 @@ Production Improvements
 
 Real systems improve this with:
 
-Feature	                       Why  
-Better chunking	           improves retrieval  
-Metadata filtering	       document selection  
-Hybrid search	           keyword + vector  
-Caching	                   faster responses  
-Reranking	               better document relevance  
+Feature	           &nbsp;&nbsp;             Why  
+Better chunking	   &nbsp;&nbsp;           improves retrieval  
+Metadata filtering &nbsp;&nbsp;	         document selection  
+Hybrid search	   &nbsp;&nbsp;           keyword + vector  
+Caching	           &nbsp;&nbsp;          faster responses  
+Reranking	       &nbsp;&nbsp;          better document relevance  
 
 
