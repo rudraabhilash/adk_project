@@ -46,5 +46,27 @@ Step 5 - "ollama run llama3" Run the model
 
 Step 6 - Your local llm model is running! Ask questions!
 
+Step 7 - You usually do not need to start server(http://localhost:11434) manually, but if needed: "ollama serve"
+
+Step 8 - Officical Python client to use ollama in python code - pip install ollama
+
+Step 9 - Sample code to run ollama via python -
+
+{content: }
+
+import ollama
+
+response = ollama.chat(
+    model="llama3",
+    messages=[
+        {"role": "user", "content": "Explain distributed locking in simple words"}
+    ]
+)
+
+print(response["message"]["content"])
+
+{content: }
+
+Step 10 - 
 *******************************************************************************************************************************************************************
 *******************************************************************************************************************************************************************
