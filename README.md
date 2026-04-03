@@ -62,40 +62,7 @@ Step 7 - You usually do not need to start server(http://localhost:11434) manuall
 
 Step 8 - Officical Python client to use ollama in python code - pip install ollama
 
-Step 9 - Sample code to run ollama via python -
 
-```
-
-import ollama
-
-response = ollama.chat(
-    model="llama3",
-    messages=[
-        {"role": "user", "content": "Explain distributed locking in simple words"}
-    ]
-)
-
-print(response["message"]["content"])
-
-```
-
-Step 10 - Alternate use via REST API - 
-
-```
-import requests
-
-url = "http://localhost:11434/api/generate"
-
-data = {
-    "model": "llama3",
-    "prompt": "Explain caching strategies",
-    "stream": False
-}
-
-response = requests.post(url, json=data)
-print(response.json()["response"])
-```
-*******************************************************************************************************************************************************************
 *******************************************************************************************************************************************************************
 
 
@@ -133,6 +100,9 @@ Setup instructions -
 pip install ollama langchain langchain-community chromadb pypdf sentence-transformers
 ollama pull llama3
 
+If you are facing issues in installing langchain or langchain-community due to missing C++14 -   
+python -m pip install --upgrade pip setuptools wheel  
+pip install greenlet==2.0.2
 
 
 Production Improvements
