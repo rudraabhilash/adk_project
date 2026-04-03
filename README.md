@@ -1,11 +1,11 @@
 Git commands -   
 git pull - to pull changes from remote to your local repository  
-git branch - to see branches locally
-git status - to see status locally
-git diff filename - to see difference
-git add filename - to add from normal area to staging area;after this step diff will not be shown
-git commit -m "msg" - commit or save state of project
-git push origin main - to push to remote repositories
+git branch - to see branches locally  
+git status - to see status locally  
+git diff filename - to see difference  
+git add filename - to add from normal area to staging area;after this step diff will not be shown  
+git commit -m "msg" - commit or save state of project  
+git push origin main - to push to remote repositories  
 
 
 **************************************************************************************************************************************************************************************************************************************************************************************************************************************
