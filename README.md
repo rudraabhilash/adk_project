@@ -1,5 +1,5 @@
-Git commands - 
-git pull - to pull changes from remote to your local repository
+Git commands -   
+git pull - to pull changes from remote to your local repository  
 git branch - to see branches locally
 git status - to see status locally
 git diff filename - to see difference
