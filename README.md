@@ -109,7 +109,7 @@ Production Improvements
 
 Real systems improve this with:
 
-Feature	           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             Why  
+Feature	           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             Why  
 Better chunking	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      improves retrieval  
 Metadata filtering &nbsp;&nbsp;&nbsp;&nbsp;	         document selection  
 Hybrid search	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           keyword + vector  
