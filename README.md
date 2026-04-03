@@ -52,7 +52,7 @@ Step 8 - Officical Python client to use ollama in python code - pip install olla
 
 Step 9 - Sample code to run ollama via python -
 
-{content: }
+```
 
 import ollama
 
@@ -65,8 +65,24 @@ response = ollama.chat(
 
 print(response["message"]["content"])
 
-{content: }
+```
 
-Step 10 - 
+Step 10 - Alternate use via REST API - 
+
+```
+import requests
+
+url = "http://localhost:11434/api/generate"
+
+data = {
+    "model": "llama3",
+    "prompt": "Explain caching strategies",
+    "stream": False
+}
+
+response = requests.post(url, json=data)
+
+print(response.json()["response"])
+```
 *******************************************************************************************************************************************************************
 *******************************************************************************************************************************************************************
