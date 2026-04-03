@@ -81,8 +81,55 @@ data = {
 }
 
 response = requests.post(url, json=data)
-
 print(response.json()["response"])
 ```
 *******************************************************************************************************************************************************************
 *******************************************************************************************************************************************************************
+
+
+RAG pipeline - 
+
+
+Below RAG(LLM+docs) architecture is being used - 
+User
+ ↓
+API (FastAPI or Django use karte hai)
+ ↓
+Retriever
+ ↓
+Vector DB
+ ↓
+LLaMA
+ ↓
+Answer
+
+Let me define workflow - 
+
+Load documents
+Split them into chunks
+Convert chunks → embeddings
+Store in vector database
+Retrieve relevant chunks
+Send chunks + question to LLaMA
+
+Components - 
+1. Llama(via ollama framework)
+2. langchain framework
+3. chroma vector database
+
+Setup instructions - 
+pip install ollama langchain langchain-community chromadb pypdf sentence-transformers
+ollama pull llama3
+
+
+
+Production Improvements
+
+Real systems improve this with:
+
+Feature	                       Why
+Better chunking	           improves retrieval
+Metadata filtering	       document selection
+Hybrid search	           keyword + vector
+Caching	                   faster responses
+Reranking	               better document relevance
