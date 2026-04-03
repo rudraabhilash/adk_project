@@ -7,3 +7,9 @@ flask
 fastapi
 uvicorn
 jupyter
+ollama 
+langchain 
+langchain-community 
+chromadb 
+pypdf 
+sentence-transformers
