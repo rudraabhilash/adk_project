@@ -29,7 +29,7 @@ This workspace is set up for machine learning, AI, and web development using Pyt
 *******************************************************************************************************************************************************************
 *******************************************************************************************************************************************************************
 
-ollama installtion - 
+ollama installation - 
 
 An open-source framework designed to run large language models by Jeffrey Morgan and Michael Chiang as a part of Y Combinator's Winter 2021 batch. 
 Context: The founders created Ollama to make it easier for developers to run large language models (LLMs) locally, focusing on privacy and bypassing expensive cloud APIs. 
