@@ -1,3 +1,9 @@
+Git commands - 
+git pull - to pull changes from remote to your local repository
+
+
+**************************************************************************************************************************************************************************************************************************************************************************************************************************************
+
 # Python ML/AI & Web Development Workspace
 
 This workspace is set up for machine learning, AI, and web development using Python. 
@@ -133,3 +139,5 @@ Metadata filtering	       document selection
 Hybrid search	           keyword + vector
 Caching	                   faster responses
 Reranking	               better document relevance
+
+
