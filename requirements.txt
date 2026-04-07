@@ -1,10 +1,15 @@
-# Common ML/AI and web development packages
+# Common AI and web development packages
 numpy
 pandas
 scikit-learn
 matplotlib
 flask
 fastapi
+google-adk
+litellm
+httpx
+pydantic
+streamlit
 uvicorn
 jupyter
 ollama 
