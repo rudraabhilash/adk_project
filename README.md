@@ -113,14 +113,14 @@ Features -
 
 
 Production Improvements  
-Chat history(memory), better embedding models, persistent chroma DB to disk, web app, reranking models(top 10 chunks after vector search)  
+Chat history(memory), better embedding models, persistent chroma DB to disk, web app, reranking models(top 10 chunks after vector search)    
 Real systems improve this with:
 
-Feature	           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             Why  
-Better chunking	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                      improves retrieval  
-Metadata filtering &nbsp;&nbsp;&nbsp;&nbsp;	         document selection  
-Hybrid search	   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;           keyword + vector  
-Caching	           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          faster responses  
-Reranking	       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          better document relevance  
+Feature	           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;             Why  
+Better chunking	   &emsp;&emsp;                             improves retrieval  
+Metadata filtering &emsp;	                                document selection  
+Hybrid search	   &emsp;&emsp;                             keyword + vector  
+Caching	           &emsp;&emsp;&emsp;&emsp;                 faster responses  
+Reranking	       &emsp;&emsp;&emsp;&emsp;                 better document relevance  
 
 
