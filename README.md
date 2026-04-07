@@ -105,8 +105,15 @@ python -m pip install --upgrade pip setuptools wheel
 pip install greenlet==2.0.2
 
 
-Production Improvements
+Features - 
+1. First run may be slow due to embeddings creation, vector db etc after that queries are fast.  
+2. Works fully remote. no openAI api, no internet needed, fully private.  
+3. Accuracy depends on chunk size, embedding quality, document clarity  
 
+
+
+Production Improvements  
+Chat history(memory), better embedding models, persistent chroma DB to disk, web app, reranking models(top 10 chunks after vector search)  
 Real systems improve this with:
 
 Feature	           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             Why  
