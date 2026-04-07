@@ -41,6 +41,7 @@ This workspace is set up for machine learning, AI, and web development using Pyt
 
 
 # Data Agent
+# Data analysis
 # Validation & Reporting Agent
 # Documentation Agent
 

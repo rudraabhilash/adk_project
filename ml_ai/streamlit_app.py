@@ -2,8 +2,8 @@ import streamlit as st
 import requests
 
 
-st.set_page_config(page_title="ADK-Powered Travel Planner", page_icon="✈️")
-st.title("🌍 ADK-Powered Travel Planner")
+st.set_page_config(page_title="Google ADK Multi agent system", page_icon="🧠 ")
+st.title("ADK Multi agent system")
 origin = st.text_input("Where are you flying from?", placeholder="e.g., New York")
 destination = st.text_input("Destination", placeholder="e.g., Paris")
 start_date = st.date_input("Start Date")
