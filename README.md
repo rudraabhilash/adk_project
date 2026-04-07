@@ -25,7 +25,9 @@ This workspace is set up for machine learning, AI, and web development using Pyt
 3. Run ML/AI code: `python ml_ai/main.py`
 4. Run web app: `python web_app/app.py`
 
-#cd into ml_ai folder for sure else you will be in trouble!
+#cd to ml_ai folder
+
+#create virtual environment and install all packages from requirements.txt
 
 #uvicorn agents.host_agent.__main__:app --port 8000 & 
 
@@ -38,6 +40,20 @@ This workspace is set up for machine learning, AI, and web development using Pyt
 #streamlit run streamlit_app.py
 
 
+# Data Agent
+# Validation & Reporting Agent
+# Documentation Agent
+
+# Experiment Planner
+# Metrics Agent
+# Result Comparator Agent
+# Explanation Agent
+# Intent Parser Agent
+# Anomaly Detection Agent
+# Assumption Checker
+# Assumption or hypothesis Challenger
+# Knowledge Extractor
+# Insight Agent
 *******************************************************************************************************************************************************************
 *******************************************************************************************************************************************************************
 
