@@ -121,7 +121,7 @@ pip install ollama → only Python client/wrapper (no CLI), pip install ollama d
 
 ******************************************************************
 ******************************************************************
-🔹 Fix steps for path issues(also check on CMD): Never have space and quotes in paths so basically folder names
+🔹 Fix steps for path issues(also check on CMD): Never have special characters and quotes in paths so basically folder names
 Press Win + S → search Environment Variables
 Open → Edit system environment variables
 Click → Environment Variables
