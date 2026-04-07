@@ -39,6 +39,31 @@ This workspace is set up for machine learning, AI, and web development using Pyt
 
 #streamlit run streamlit_app.py
 
+# Single Agent → One “generalist quant brain”, Shallow reasoning, Misses edge cases, if smthng goes wrong hard to detect where
+#                context window limit, output limit
+
+# Multi-Agent System → Team of “specialist quant brains”
+
+# Human-Like Research Team Simulation
+# Multi-agent = like a real quant team:
+# Junior analyst → data exploration
+# Researcher → hypothesis
+# Reviewer → challenge
+# Head quant → insight
+
+<!-- 
+Analyze data
+Detect patterns
+Reason causally
+Generate hypotheses
+Suggest actions 
+-->
+
+# Each agent specializes:
+# 📊 Data Agent → patterns
+# 🔬 Hypothesis Agent → ideas
+# 🧠 Insight Agent → reasoning
+# ⚠️ Debug Agent → challenges
 
 # Data Agent
 # Data analysis
@@ -80,6 +105,61 @@ Step 7 - You usually do not need to start server(http://localhost:11434) manuall
 Step 8 - Officical Python client to use ollama in python code - pip install ollama
 
 
+✅ How they work together
+Python code (ollama package)
+        ↓
+Local API call (localhost:11434)
+        ↓
+Ollama engine (installed from website)
+        ↓
+LLaMA model runs
+
+
+Ollama (website install) → provides ollama command, Actual Ollama engine (runs models)
+pip install ollama → only Python client/wrapper (no CLI), pip install ollama does NOT install Ollama. It only lets Python talk to it.
+
+
+******************************************************************
+******************************************************************
+🔹 Fix steps for path issues(also check on CMD): Never have space and quotes in paths so basically folder names
+Press Win + S → search Environment Variables
+Open → Edit system environment variables
+Click → Environment Variables
+Under System Variables → Path → Edit
+Add:
+C:\Users\<your-user>\AppData\Local\Programs\Ollama
+Click OK → restart terminal
+*****************************************************************
+*****************************************************************
+✅ Using embeddings (for RAG)
+ollama pull nomic-embed-text
+import ollama
+
+embedding = ollama.embeddings(
+    model='nomic-embed-text',
+    prompt='Machine learning is amazing'
+)
+
+print(len(embedding['embedding']))
+
+
+
+✅ Performance tips (IMPORTANT)
+🔹 If system is slow:
+
+Use:
+
+ollama run llama3:8b
+Close heavy apps
+Prefer 16GB RAM minimum
+🔹 GPU usage:
+Ollama auto-detects GPU
+NVIDIA works best (CUDA)
+
+You can also choose:
+
+llama3:8b (lightweight, faster)
+llama3:70b (heavy, needs strong GPU)
 *******************************************************************************************************************************************************************
 
 
@@ -100,6 +180,20 @@ LLaMA
 Answer
 
 Let me define workflow - 
+Architecture
+Documents
+   ↓
+Chunking
+   ↓
+Embeddings
+   ↓
+Vector Database
+   ↓
+Retriever
+   ↓
+Prompt with context
+   ↓
+LLaMA (via Ollama)
 
 Load documents
 Split them into chunks
